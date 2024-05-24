@@ -24,10 +24,10 @@ public class MenuPage extends BaseClass{
 	}
 	
 
-//	public SalesPage clickOnSales() { 
-//		oWrap.click(driver.findElement(salesLink), "Sales Link");
-//		return new SalesPage(driver,node);
-//	}
+	public SalesPage clickOnSales() { 
+		driver.findElement(salesLink).click();
+		return new SalesPage(); 
+	}
 	
 	public MenuPage clickOnViewAll() {
 		driver.findElement(viewAllLink).click();
