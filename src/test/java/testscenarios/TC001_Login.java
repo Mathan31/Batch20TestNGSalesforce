@@ -1,6 +1,7 @@
 package testscenarios;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
@@ -8,18 +9,23 @@ import pages.LoginPage;
 
 public class TC001_Login extends BaseClass{
 	
+	@BeforeTest
+	public void testCaseSetUp() {
+		excelFileName = "TC01";
+	}
+	
 	@Test(priority = 1)
 	public void loginFieldValidation() {
-		boolean result = new LoginPage().verifyLoginElements();
+		boolean result = new LoginPage(driver).verifyLoginElements();
 		Assert.assertTrue(result);
 		
 	}
 	
-	@Test(priority = 2)
-	public void loginWithValidCredential() {
-		boolean result = new LoginPage()
-		    .enterUserName("mathan@credosystemz.sanbox")
-		    .enterPassword("Mylearning$2")
+	@Test(priority = 2,dataProvider = "TestCaseData")
+	public void loginWithValidCredential(String sUserName,String sPassword) {
+		boolean result = new LoginPage(driver)
+		    .enterUserName(sUserName)
+		    .enterPassword(sPassword)
 		    .clickOnLogin()
 		    .verifyHomeElement()
 		    .clickUserImg()
@@ -30,7 +36,7 @@ public class TC001_Login extends BaseClass{
 	
 	@Test(priority = 3)
 	public void loginWithInValidCredential() {
-		boolean result = new LoginPage()
+		boolean result = new LoginPage(driver)
 		.enterUserName("mathan@credosystemz.sanbox")
 		.enterPassword("Mylearning$1")
 		.clickOnLoginWithInvalidCredential()
