@@ -10,10 +10,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
+import libraries.HTMLReport;
 import util.ExcelReader;
 import util.PropertyReader;
 
-public class BaseClass {
+public class BaseClass extends HTMLReport{
 	
 	public WebDriver driver; // 123456
 	public String fileName = "Environment";
@@ -57,6 +58,12 @@ public class BaseClass {
 	public Object[][] excelData() {
 		Object[][] values = ExcelReader.getValueFromExcel(excelFileName);
 		return values;
+	}
+
+	@Override
+	public String takeScreenshot() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
