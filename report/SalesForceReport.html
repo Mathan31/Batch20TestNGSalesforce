@@ -1,0 +1,1000 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 31, 2024 09:38:41 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Shubhana</a><a class="dropdown-item" href="#">Preethi</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="Shubhana"
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">Create Lead Scenario</p>
+            <p class="text-sm">
+              <span>9:38:51 AM</span> / <span>00:01:28:583</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create Lead Scenario</h5>
+<span class='badge badge-success'>05.31.2024 9:38:51 AM</span>
+<span class='badge badge-danger'>05.31.2024 9:40:20 AM</span>
+<span class='badge badge-default'>00:01:28:583</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Shubhana</span>
+<span class="badge badge-pill badge-default">Sanity</span></div>
+<div class="m-t-10 m-l-5">Create Lead Field Validation and Creating Lead</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>31:28:566</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>Create Lead</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Shubhana</span>
+<span class="badge badge-pill badge-default">Sanity</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:57 AM</td>
+        <td>
+          The data: mathan@credosystemz.sanbox entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128537584.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128537584.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:58 AM</td>
+        <td>
+          The data: Mylearning$2 entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128538291.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128538291.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:15 AM</td>
+        <td>
+          The element Login Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128554263.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128554263.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:16 AM</td>
+        <td>
+          The element App Launcher is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128555386.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128555386.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:18 AM</td>
+        <td>
+          The element User Image is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128557605.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128557605.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:21 AM</td>
+        <td>
+          The element App Launcher is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128560268.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128560268.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:26 AM</td>
+        <td>
+          The element viewAll Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128565993.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128565993.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:40 AM</td>
+        <td>
+          The element Sales Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128569080.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128569080.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:46 AM</td>
+        <td>
+          The element Leads Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128586544.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128586544.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:55 AM</td>
+        <td>
+          The element New Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128595407.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128595407.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:00 AM</td>
+        <td>
+          The data: Jha entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128600393.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128600393.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:01 AM</td>
+        <td>
+          The data: PatilMenon entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128601161.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128601161.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:01 AM</td>
+        <td>
+          The control is moved to element 
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128601483.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128601483.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:04 AM</td>
+        <td>
+          The element Save Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128604822.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128604822.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:05 AM</td>
+        <td>
+          The element Save Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128605096.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128605096.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:08 AM</td>
+        <td>
+          The element Save Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128608474.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128608474.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:14 AM</td>
+        <td>
+          The element User Image is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128613780.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128613780.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:16 AM</td>
+        <td>
+          The element Logout Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128616220.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128616220.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:18 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128618505.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128618505.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:19 AM</td>
+        <td>
+          The element pw is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128619730.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128619730.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:20 AM</td>
+        <td>
+          The element Login is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128619912.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128619912.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Preethi"
+          tag="Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Test Scenario</p>
+            <p class="text-sm">
+              <span>9:38:53 AM</span> / <span>00:00:58:337</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Test Scenario</h5>
+<span class='badge badge-success'>05.31.2024 9:38:53 AM</span>
+<span class='badge badge-danger'>05.31.2024 9:39:51 AM</span>
+<span class='badge badge-default'>00:00:58:337</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Preethi</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+<div class="m-t-10 m-l-5">Login Field and Login Validation</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:58:327</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>Login</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Preethi</span>
+<span class="badge badge-pill badge-default">Smoke</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:55 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128535718.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128535718.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:56 AM</td>
+        <td>
+          The element pw is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128536153.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128536153.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:56 AM</td>
+        <td>
+          The element Login is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128536456.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128536456.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:57 AM</td>
+        <td>
+          The data: mathan@credosystemz.sanbox entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128537485.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128537485.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:58 AM</td>
+        <td>
+          The data: Mylearning$2 entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128537906.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128537906.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:09 AM</td>
+        <td>
+          The element Login Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128549017.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128549017.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:11 AM</td>
+        <td>
+          The element App Launcher is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128550754.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128550754.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:14 AM</td>
+        <td>
+          The element User Image is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128554218.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128554218.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:21 AM</td>
+        <td>
+          The element User Image is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128560432.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128560432.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:40 AM</td>
+        <td>
+          The element Logout Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128563918.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128563918.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:43 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128583014.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128583014.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:45 AM</td>
+        <td>
+          The element pw is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128584759.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128584759.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:45 AM</td>
+        <td>
+          The element Login is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128585318.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128585318.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:47 AM</td>
+        <td>
+          The data: mathan@credosystemz.sanbox entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128587059.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128587059.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:48 AM</td>
+        <td>
+          The data: Mylearning$1 entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128588112.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128588112.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:50 AM</td>
+        <td>
+          The element Login Button is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128589678.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128589678.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:51 AM</td>
+        <td>
+          The element null is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128591175.png' src="D:\Corporate Training\Giving Force\Batch20TestngSalesForceFramework/snap/img1717128591175.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:38:51 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Create Lead Scenario</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:38:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login Test Scenario</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Shubhana</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Shubhana</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:38:51 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Create Lead Scenario</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Preethi</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Preethi</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:38:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login Test Scenario</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 31, 2024 09:38:41 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 31, 2024 09:40:21 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>2</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>38</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create Lead Scenario":88.583,"Login Test Scenario":58.337
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Shubhana</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Preethi</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Sanity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 38,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

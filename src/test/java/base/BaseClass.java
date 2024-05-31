@@ -1,13 +1,19 @@
 package base;
 
+import java.io.File;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 
 import libraries.HTMLReport;
@@ -21,6 +27,17 @@ public class BaseClass extends HTMLReport{
 	public String sBrowser = PropertyReader.readDataFromPropertyFile(fileName, "Browser");
 	public String sURL = PropertyReader.readDataFromPropertyFile(fileName, "URL");
 	public String excelFileName = "";
+	public String testName,testDesc,moduleName;
+	
+	@BeforeSuite
+	public void reportInit() {
+		startReport();
+	}
+	
+	@AfterSuite
+	public void bindReport() {
+		endReport();
+	}
 	
 	@BeforeClass
 	public void invokeBrowser() {
@@ -36,7 +53,7 @@ public class BaseClass extends HTMLReport{
 		case "firefox":
 			System.out.println("User option is "+sBrowser+",So invoking firefox browser");
 			driver = new FirefoxDriver();
-			break;
+			break; 
 		default:
 			System.out.println("User option is wrong "+sBrowser+",So invoking the default chrome browser");
 			driver = new ChromeDriver();
@@ -47,6 +64,8 @@ public class BaseClass extends HTMLReport{
 		driver.get(sURL);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		startTestCase(testName, testDesc);
+		startTestcase(moduleName);
 	}
 	
 	@AfterClass	
@@ -62,8 +81,17 @@ public class BaseClass extends HTMLReport{
 
 	@Override
 	public String takeScreenshot() {
-		// TODO Auto-generated method stub
-		return null;
+		String sPath = System.getProperty("user.dir")+"/snap/img"+System.currentTimeMillis()+".png";
+		TakesScreenshot oShot = (TakesScreenshot)driver;
+		File osrc = oShot.getScreenshotAs(OutputType.FILE);
+		File dis = new File(sPath);
+		try {
+			FileUtils.copyFile(osrc, dis); 
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return sPath;
 	}
 
 }
